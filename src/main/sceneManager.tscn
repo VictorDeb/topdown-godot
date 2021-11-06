@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/levels/initUI.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/levels/transitions.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Node2D.tscn" type="PackedScene" id=3]
+
+[node name="sceneManager" type="Node2D"]
+
+[node name="currentScene" type="Node2D" parent="."]
+
+[node name="Control" parent="currentScene" instance=ExtResource( 1 )]
+transition = ExtResource( 2 )
+next_scene = ExtResource( 3 )
