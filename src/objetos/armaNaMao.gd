@@ -1,6 +1,7 @@
 extends Node2D
 
 var bullet = preload("res://src/objetos/bullet.tscn")
+var forcaDisparo = 60
 export (int) var desenhoArma
 export (int) var d
 
